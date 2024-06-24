@@ -1,8 +1,55 @@
 .about-showcase {
-    background: url("./images/cap.jpg") no-repeat center/cover;
+    background: url("./images/lift.jpg") no-repeat top/cover;
     height: 500px;
 }
 
 .about-showcase .overlay {
     height:500px ;
 }
+
+.about {
+    padding: 50px 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.about .cards {
+    background-color: floralwhite;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,00.2);
+}
+
+.about.cards h4 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.about .cards p {
+    margin-top: 10px;
+    line-height: 1.8;
+
+}
+
+@media (min-width:768px) {
+    .about {
+        grid-template-columns: 2, 1fr;
+    }
+}
+
+@media(min-width: 1024px) {
+    .about {
+        grid-template-columns: 3, 1fr;
+    }
+}
+
+@media (min-width: 1440px) {
+    .about{
+        max-width: 1300px;
+        margin: auto;
+        padding: 100px 0;
+
+    }
+}
+
