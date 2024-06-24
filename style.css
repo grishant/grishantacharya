@@ -2,12 +2,16 @@
     --primary-colour: rgb(105, 187, 73);
 }
 
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+img {
+    max-width: 100%;
+}
+
 ul {
     list-style-type: none;
 }
@@ -17,14 +21,12 @@ a {
     color: rgb(0, 0, 0);
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: "Fraunces", sans-serif;
 }
 
-p,
-input,
-button {
-    font-family: "catamaran" , sans-serif;
+p, input, button {
+    font-family: "Catamaran", sans-serif;
 }
 
 .header-underline {
@@ -32,51 +34,51 @@ button {
     height: 4px;
     width: 200px;
 }
+
 body {
     background-color: antiquewhite;
-   color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
 }
 
 /* Header */ 
-
 .header {
-    display: flex ;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
 }
 
 .header .logo h2 span {
- color:var(--primary-colour);
+    color: var(--primary-colour);
 }
 
 .header .navbar {
-   opacity: 0;
-   height: 0;
+    opacity: 0;
+    height: 0;
+    transition: opacity 0.3s, height 0.3s;
 }
 
-.header .navbar.open{
+.header .navbar.open {
     opacity: 1;
-    height: 100px;
+    height: auto;
 }
+
 .header .book-now-btn {
     display: none;
 }
 
 .header .menu-btn {
     font-size: 40px;
+    cursor: pointer;
 }
 
-/* Showcase*/
-
+/* Showcase */
 .showcase {
-    background: url("./images/my-image.jpg") no-repeat center/
-    cover;
+    background: url("./images/my-image.jpg") no-repeat center/cover;
     height: 850px;
 }
 
 .showcase .overlay {
-    /* height 500px; */
     height: 850px;
     display: flex;
     flex-direction: column;
@@ -85,49 +87,84 @@ body {
     text-align: center;
     padding: 20px;
     color: #fff;
-    background-color: rgb(0, 0, 0, 0.4);
-
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .showcase .overlay h1 {
-    font: 40px;
+    font-size: 40px;
     margin-bottom: 10px;
     line-height: 1;
 }
 
+/* Book a call section */
+.book-now {
+    padding: 50px 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.book-now h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.book-now .btn {
+    background-color: var(--primary-colour);
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid var(--primary-colour);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: background-color 0.4s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.book-now .btn:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--primary-colour);
+}
+
+/* Testimonials */
+.testimonials {
+    padding: 0 0 50px 0;
+}
+
+.testimonials .description {
+    padding: 10px 20px 0 20px;
+}
+
+.testimonials .description h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.testimonials .description ul li {
+    text-align: center;
+    margin: 5px 0;
+}
+
+/* Responsive typography */
 @media (min-width: 640px) {
-    .showcase .overlay h1{
+    .showcase .overlay h1 {
         font-size: 36px;
     }
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
     .showcase .overlay h1 {
         font-size: 48px;
     }
 }
 
 @media (min-width: 1024px) {
-    .showcase .overlay h1{
+    .showcase .overlay h1 {
         font-size: 64px;
-
     }
 }
 
-.showcase .overlay p{
+.showcase .overlay p {
     margin-top: 10px;
     font-size: 18px;
 }
-
-/* 
-@media (increasing for different screen)
-500px
-640px
-768px
-992px- laptops
-1024px
-1280px - bigger laptop
-1440 - desktops
-1600px- desktops
-1920 px
- */
