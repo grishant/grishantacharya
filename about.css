@@ -1,0 +1,8 @@
+.about-showcase {
+    background: url("./images/cap.jpg") no-repeat center/cover;
+    height: 500px;
+}
+
+.about-showcase .overlay {
+    height:500px ;
+}
