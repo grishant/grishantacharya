@@ -21,7 +21,7 @@
     box-shadow: 0 5px 10px rgba(0,0,0,00.2);
 }
 
-.about.cards h4 {
+.about .cards h4 {
     font-size: 30px;
     margin-bottom: 20px;
 }
@@ -46,6 +46,7 @@
 
 @media (min-width: 1440px) {
     .about{
+        grid-template-columns: 4, 1fr;
         max-width: 1300px;
         margin: auto;
         padding: 100px 0;
