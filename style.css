@@ -132,18 +132,20 @@ body {
 }
 
 .testimonials .description {
-    padding: 10px 20px 0 20px;
+    padding: 20px 50px 0 50px;
 }
 
 .testimonials .description h2 {
     margin-bottom: 10px;
-    text-align: center;
+  
 }
 
 .testimonials .description ul li {
-    text-align: center;
+  
     margin: 5px 0;
 }
+
+
 
 /* Responsive typography */
 @media (min-width: 640px) {
@@ -156,15 +158,32 @@ body {
     .showcase .overlay h1 {
         font-size: 48px;
     }
+    .showcase .overlay p {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    .book-now h2 {
+        font-size: 80px ;
+    }
+    .book-now .btn {
+        padding: 20px 60px;
+    }
 }
 
 @media (min-width: 1024px) {
     .showcase .overlay h1 {
         font-size: 64px;
     }
+    .testimonials {
+        max-width: 1000px;
+        margin: auto;
+    }
+    .testimonials h2 {
+        font-size: 46px;
+    }
+
+    .testimonials .description ul li {
+        font-size: 20px;
+    }
 }
 
-.showcase .overlay p {
-    margin-top: 10px;
-    font-size: 18px;
-}
